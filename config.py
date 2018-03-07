@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 class Config:
-    STOCK_PATH = Path.home() / 'downloads' / 'stocks'
+    STOCK_PATH = Path.home() / 'data' / 'stocks'
     MARKET_HK_SUFFIX = 'HK'
     MARKET_SH_SUFFIX = 'SH'
     MARKET_SZ_SUFFIX = 'SZ'

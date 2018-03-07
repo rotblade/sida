@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+"""
+BalanceSheet in financial term.
+"""
 
 
 import pandas as pd
@@ -23,5 +26,5 @@ class BalanceSheet:
             df = pd.read_csv(f, parse_dates=['截止日期'], index_col=3)
             return df.drop(columns=['起始日期'])
 
-        dfs = [ file2df(f) for f in files ]
+        dfs = [file2df(f) for f in files]
         self.balancesheet = pd.concat(dfs)
